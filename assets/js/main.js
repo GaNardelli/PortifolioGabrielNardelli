@@ -55,15 +55,3 @@ sr.reveal(".work__img", { interval: 200 });
 
 /*SCROLL CONTACT*/
 sr.reveal(".contact__input", { interval: 200 });
-
-/* Enviar Formulário*/
-
-document.getElementById("contatoForm").addEventListener("submit", function () {
-  let nome = this.querySelector("input[name=nome]"),
-    nome = nome.value;
-  let email = this.querySelector("input[name=email]"),
-    email = email.value;
-  let texto =
-    "Olá destinatário, \nMeu nome é " + nome + " e meu email é " + email;
-  this.querySelector("input[name=Body]").setAttribute("value", texto);
-});
